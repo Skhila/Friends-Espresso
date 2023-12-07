@@ -15,7 +15,6 @@ import com.atiurin.ultron.extensions.hasText
 import org.junit.Test
 
 class CustomMatchersTest : BaseTest() {
-
     private val activityTestRule = ActivityTestRule(MainActivity::class.java)
 
     init {

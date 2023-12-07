@@ -9,7 +9,6 @@ import com.atiurin.sampleapp.tests.BaseTest
 import org.junit.Test
 
 class WithSuitableRootTest : BaseTest() {
-
     private val activityTestRule = ActivityScenarioRule(MainActivity::class.java)
 
     init {
