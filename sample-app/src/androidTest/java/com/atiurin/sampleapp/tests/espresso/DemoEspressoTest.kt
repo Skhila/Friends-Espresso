@@ -14,7 +14,6 @@ import com.atiurin.ultron.extensions.isDisplayed
 import org.junit.Test
 
 class DemoEspressoTest : BaseTest() {
-
     private val activityTestRule = ActivityTestRule(MainActivity::class.java)
 
     init {

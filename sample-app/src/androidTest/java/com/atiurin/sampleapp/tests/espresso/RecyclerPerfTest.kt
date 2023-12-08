@@ -16,7 +16,6 @@ import com.atiurin.ultron.extensions.isDisplayed
 import org.junit.Test
 
 class RecyclerPerfTest : BaseTest() {
-
     private val activityTestRule = ActivityTestRule(MainActivity::class.java)
 
     init {

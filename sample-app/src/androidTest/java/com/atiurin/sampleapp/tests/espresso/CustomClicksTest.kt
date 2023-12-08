@@ -10,7 +10,6 @@ import com.atiurin.ultron.testlifecycle.setupteardown.SetUpRule
 import org.junit.Test
 
 class CustomClicksTest : BaseTest() {
-
     private val startActivity = SetUpRule().add {
         ActivityScenario.launch(CustomClicksActivity::class.java)
     }
