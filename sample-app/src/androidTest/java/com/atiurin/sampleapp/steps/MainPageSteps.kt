@@ -1,6 +1,7 @@
 package com.atiurin.sampleapp.steps
 
 import com.atiurin.sampleapp.helper.assertIsViewDisplayed
+import com.atiurin.sampleapp.pages.ChatPage
 import com.atiurin.sampleapp.pages.FriendsListPage
 import com.atiurin.sampleapp.pages.UIElementPage
 import com.atiurin.ultron.extensions.tap
@@ -12,9 +13,12 @@ object MainPageSteps {
         return this
     }
 
-    fun openFriendChatByName(name: String): MainPageSteps {
+    fun openFriendChatByName(name: String) {
         FriendsListPage.openChat(name)
-        return this
+    }
+
+    fun scrollToFriendChatByName(name: String) {
+        FriendsListPage.getListItem(name).scrollToItem()
     }
 
     fun openMainMenu(): MainPageSteps {
